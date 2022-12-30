@@ -15,6 +15,35 @@ module.exports = {
                 center: true,
                 padding: "15px",
             },
+            fontFamily: {
+                barlow: ["'Barlow', sans-serif;"],
+            },
+            colors: {
+                primary: "#8a2b06",
+                secondary: "#4d1601",
+                hover: "#2c0d00",
+                badge: "#b94517",
+                badge_hover: "#92320c",
+                bg_color: "#383838",
+                price: "#ad5502",
+            },
+
+            animation: {
+                meals: "meals_appear 1s ease-out forwards",
+            },
+
+            keyframes: {
+                meals_appear: {
+                    from: {
+                        opacity: 0,
+                        transform: "translateY(3rem)",
+                    },
+                    to: {
+                        opacity: 1,
+                        transform: "translateY(0)",
+                    },
+                },
+            },
         },
     },
     plugins: [
